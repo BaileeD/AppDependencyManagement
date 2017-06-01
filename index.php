@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <script type="text/javascript" src="login.js"></script>
 </head>
 <body>
 
@@ -73,12 +72,12 @@ $conn->close();
     <table border = "0" id = "login" align = "center" width = "50%">
         <tr align = "left" valign = "middle">
             <td align="right"><strong>Username (<span style="color: red; ">*</span>):</strong></td>
-            <td><input type="text" name="userName" maxlength="100" title="Maxinum 100 characters" onblur="inputValidate('validation.php', 'checkUserName', userName.value)" placeholder="Enter your username here" style="width: 100%; height: 16px"/></td>
+            <td><input type="text" name="userName" maxlength="100" title="Maximum 100 characters" placeholder="Enter your username here" style="width: 100%; height: 16px"/></td>
             <td><span id="checkUserName"></span></td>
         </tr>
         <tr align="left" valign="middle">
             <td align="right"><strong>Password (<span style="color: red; ">*</span>):</strong></td>
-            <td><input type="text" name="password" maxlength="25" title="Maxinum 25 characters" onblur="inputValidate('validation.php', 'checkPassword', password.value)" placeholder="Enter your password here" style="width: 100%; height: 16px"/></td>
+            <td><input type="password" name="password" maxlength="25" title="Maximum 25 characters" placeholder="Enter your password here" style="width: 100%; height: 16px"/></td>
             <td><span id="checkPassword"></span></td>
         </tr>
         <tr>
